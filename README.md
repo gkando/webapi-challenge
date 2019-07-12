@@ -26,20 +26,34 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [x] Mention two parts of Express that you learned about this week.
 
-      Express in a minimalist web application framework for Node.js. 
-      Handle multiple different http requests at a specific url.
-      The benefit of Express being minimal and opensource is that it allows for the
-      addition/creation of robust middleware to solve a problem at scale.
+        Express in a minimalist web application framework for Node.js. 
+        Handle multiple different http requests at a specific url.
+        Express allows the creation of multiple routers for application modularity.
+        An added benefit of Express being minimal and opensource is that it allows for the
+        addition/creation of robust middleware to solve a problem at scale.
 
 - [x] Describe Middleware?
 
-      Middlewares are functions executed in the middle after the incoming request then produces an output which could be the final output passed or could be used by the next middleware until the cycle is completed, meaning we can have more than one middleware and they will execute in the order they are declared.
+        Middleware is a function executed in the middle after the incoming request, which then 
+        produces an output which could be the final output passed or could be used by the next 
+        middleware until the cycle is completed, meaning an endpoint can have more than one 
+        middleware and they will execute in the order they are declared.
 
-- [ ] Describe a Resource?
+- [x] Describe a Resource?
 
-- [ ] What can the API return to help clients know if a request was successful?
+        Any identifiable thing, whether digital, physical, or abstract that a server may serve
+        up for a client. 
 
-- [ ] How can we partition our application into sub-applications?
+- [x] What can the API return to help clients know if a request was successful?
+
+        A response with the a status/success flag and a message the client can relay to the user
+        so they know the request was completed.
+
+- [x] How can we partition our application into sub-applications?
+
+        Creating routers for different endpoints. 
+        Adding middleware to reduce code overhead and allow for the 
+        reuse of code where possible.
 
 ## Project Setup
 
