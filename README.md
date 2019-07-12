@@ -24,9 +24,16 @@ In this challenge, create a web API around the following resources: `Projects` a
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [x] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+      Express in a minimalist web application framework for Node.js. 
+      Handle multiple different http requests at a specific url.
+      The benefit of Express being minimal and opensource is that it allows for the
+      addition/creation of robust middleware to solve a problem at scale.
+
+- [x] Describe Middleware?
+
+      Middlewares are functions executed in the middle after the incoming request then produces an output which could be the final output passed or could be used by the next middleware until the cycle is completed, meaning we can have more than one middleware and they will execute in the order they are declared.
 
 - [ ] Describe a Resource?
 
