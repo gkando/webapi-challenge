@@ -24,15 +24,36 @@ In this challenge, create a web API around the following resources: `Projects` a
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [x] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+        Express in a minimalist web application framework for Node.js. 
+        Handle multiple different http requests at a specific url.
+        Express allows the creation of multiple routers for application modularity.
+        An added benefit of Express being minimal and opensource is that it allows for the
+        addition/creation of robust middleware to solve a problem at scale.
 
-- [ ] Describe a Resource?
+- [x] Describe Middleware?
 
-- [ ] What can the API return to help clients know if a request was successful?
+        Middleware is a function executed in the middle after the incoming request, which then 
+        produces an output which could be the final output passed or could be used by the next 
+        middleware until the cycle is completed, meaning an endpoint can have more than one 
+        middleware and they will execute in the order they are declared.
 
-- [ ] How can we partition our application into sub-applications?
+- [x] Describe a Resource?
+
+        Any identifiable thing, whether digital, physical, or abstract that a server may serve
+        up for a client. 
+
+- [x] What can the API return to help clients know if a request was successful?
+
+        A response with the a status/success flag and a message the client can relay to the user
+        so they know the request was completed.
+
+- [x] How can we partition our application into sub-applications?
+
+        Creating routers for different endpoints. 
+        Adding middleware to reduce code overhead and allow for the 
+        reuse of code where possible.
 
 ## Project Setup
 
